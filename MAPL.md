@@ -296,6 +296,6 @@ IO short for Input-Output allows access to files through `IO.readFile()`, `IO.wr
 ### math
 The math library is used for advanced mathematics includes functions like `Math.sqrt()`, `Math.abs()`, `Math.sin()`, and `Math.cos()` with several others used for more advanced calculations than the regular arithmetic allows for.
 
-## missing values
+## Missing values
 MAPL much like other languages can have values be nothing, in the case of MAPL we have 3 no value keywords: `null` a value you can assign, `undefined` an error return for when an argument in a function isn't populated, and `NaN` short for Not A Number exclusively used for divide by 0.
 

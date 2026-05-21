@@ -116,6 +116,8 @@ for (i :: 10) {
 }
 ```
 
+*note: the normal c-style for loop can also be used for more control over the for loop*
+
 it uses the 'in' operator `::` to determine if the value is apart of the comparative value.
 
 ### While loops

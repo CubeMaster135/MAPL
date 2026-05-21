@@ -194,7 +194,7 @@ MAPL allows the ability to alter the data types of variables (not constants) usi
 str() // parses to a string
 int() // parses to integer
 float() // parses to float
-bool() // parses to a boolean (only works on strings containing "true" or "false", or floats/ints of 1 & 2)
+bool() // parses to a boolean (only works on strings containing "true" or "false", or floats/ints of 0 & 1)
 enum() // parses to an enum (only works on arrays)
 arr() // parses to an array
 ```
@@ -207,7 +207,7 @@ print(float(9)) // 9.0
 
 ## arithmetic & operators
 
-MAPL uses the standard `+`, `-`, `*`, `^`, `%` MAPL also operates using BIDMAS. the division operator in MAPL is the `\` for division of floats *or* integers while keeping them their datatype, you can also do `\\` to divide a float into an integer.
+MAPL uses the standard `+`, `-`, `*`, `^`, `%` MAPL also operates using BIDMAS. the division operator in MAPL is the `/` for division of floats *or* integers while keeping them their datatype.
 
 ### operators
 
@@ -282,7 +282,7 @@ print("The player ${name} is at ${health} health!") // The player John is at 10.
 ## Built-in functions
 
 ### sys
-sys is the standard built-in library that allows you to run console commands, it has several built in functions like:
+sys is a standard built-in library that allows you to run console commands, it has several built in functions like:
 
 ```
 sys.exit(); // exits the program
@@ -290,10 +290,10 @@ sys.execute(...); // executes a console command
 sys.info(); // returns information about the current OS & device
 ```
 
-### IO
+### io
 IO short for Input-Output allows access to files through `IO.readFile()`, `IO.writeFile()`, `IO.deleteFile()`, and `IO.createFile()`
 
-### Math
+### math
 The math library is used for advanced mathematics includes functions like `Math.sqrt()`, `Math.abs()`, `Math.sin()`, and `Math.cos()` with several others used for more advanced calculations than the regular arithmetic allows for.
 
 ## missing values
